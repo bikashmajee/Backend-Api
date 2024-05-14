@@ -4,7 +4,6 @@ const { connectDB } = require("./db/connection.js")
 const { app } = require('./app.js')
 const port = process.env.PORT
 
-
 connectDB()
     .then(() => {
         app.listen(port || 8000, () => {
